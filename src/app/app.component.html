@@ -1,0 +1,10 @@
+<div class="app p-4 container-fluid">
+  <div class="row">
+    <div class="col col-md-4 offset-md-4">
+      <div *ngIf="user" class="text-center">
+        <app-card [user]="user"></app-card>
+      </div>
+        <button class="btn btn-primary" (click)="nextUser()">Next</button>
+    </div>
+  </div>
+</div>
